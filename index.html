@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!--
+ * A Design by GraphBerry
+ * Author: GraphBerry
+ * Author URL: http://graphberry.com
+ * License: http://graphberry.com/pages/license
+-->
+<html lang="en-us">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+    
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: red;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+    
+    #myBtn:hover {
+      background-color: #555;
+    }
+    </style>
+    <body>  
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Return to Top</button>
+
+        <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+          } else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ProVision</title>
+	<link rel="icon" type="image/png" href="PVIcon.png">
+
+	<!-- Load fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+	<!-- Load css styles -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+<body>
+	<div class="jumbotron home home-fullscreen" id="home">
+		<div class="mask"></div>
+		<a href="https://www.provision-sa.com" target="_blank" class="logo">
+			<img src="PV Logo3.png" alt="Moderno - Theme by GraphBerry.com" width="50px" heights="50px" target="_blank">
+		</a>
+		<a href="" class="menu-toggle" id="nav-expander"><i class="fa fa-bars"></i></a>
+		<!-- Offsite navigation -->
+		<nav class="menu">
+			<a href="#" class="close"><i class="fa fa-close"></i></a>
+			<h3>Menu</h3>
+			<ul class="nav">
+				<li><a data-scroll href="#home">Home</a></li>
+				<li><a data-scroll href="#services">Portfolio</a></li>
+				<li><a data-scroll href="#portfolio">Services</a></li>
+				<li><a data-scroll href="#contact">Contact</a></li>
+		</nav>
+		<div class="container">
+			<div class="header-info">
+				<h1><img src="Provision-logo.png"/></h1>
+				<p>A South African team of software & web development enthusiasts, established in 2013 by caffeine-loving founders, that crafts completely unique, high-quality solutions to optimise business processes and procedures for both local and global clientele.
+				</p>
+				<a href="#contact" class="btn btn-danger">Get in Touch</a>
+			</div>
+		</div>
+	</div>
+	<!-- Services section start -->
+	<section id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="service-item">
+						<div class="icon"><i class="fa fa-paint-brush" style="color:rgb(40, 40, 149)"></i></div>
+						<h3>We Are Creative</h3>
+						<p>We don’t use cookie-cutter methods. We understand that your business is unique and that means you deserve innovative and original solutions to go with it.
+
+								Through in-depth meetings, ProVision assists your business with integration processes, and where needed, create new technologies, which will faultlessly integrate into your environments.
+								
+								It's not what you know, it's who you know that matters...
+								At ProVision, we know!.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service-item">
+						<div class="icon"><i class="fa fa-mortar-board" style="color:rgb(40, 40, 149)"></i></div>
+						<h3>We Have Skills</h3>
+						<p>Whether it's legacy ERP system modifications or cutting edge asynchronous code running on a serverless architechture, ProVision have the skills to assist.
+
+								Creating amazing web applications and designing scalable infrastructure for start-ups, not to mention assisting household names - we help organisations of all sizes with their IT and software development needs.
+								
+								ProVision, we turn ideas into reality.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service-item">
+						<div class="icon"><i class="fa fa-users" style="color:rgb(40, 40, 149)"></i></div>
+						<h3>We Love To Help</h3>
+						<p>Depending on your needs, we have the capacity to develop any application for android, IOS and windows. Our clients come from a wide range of industries, meaning whoever you are and whatever you do, we can help your business reach its full potential. Our knowledge and skills are constantly growing, so you can be sure you’re always receiving the latest and most effective technological solutions to help your business cultivate and thrive.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Services section end -->
+	<!-- Portfolio section start -->
+	<section id="portfolio" class="darker">
+		<div class="container">
+			<header>
+				<h2>Services & Solutions</h2>
+				<p> At ProVision we aim to develop a program that is reliable, will limit business risk, improve users working experience and productivity and reduce errors resulting in a more satisfied client.
+				</p>
+			</header>
+			<div id="single-project"></div>
+			<div class="row" style="color:whitesmoke">
+				<figure class="portfolio-item col-md-4 col-sm-6" >
+					<img class="img-responsive" src="8.jpg" alt="Services" width="300px"/>
+					<figcaption class="mask">
+						<h3 style=text-align:center>Excel to Website Applications</h3>
+						<br>
+						<h4 style=text-align:center>Have you ever wondered how you can convert an Excel spreadsheet into a proper website application?</h4>
+					</figcaption>
+				</figure>
+				<figure class="portfolio-item col-md-4 col-sm-6" >
+					<img class="img-responsive" src="2.jpg" alt="Development" width="230px" />
+					<figcaption class="mask">
+						<h3 style=text-align:center>Database Development</h3>
+						<br>
+						<h4 style=text-align:center>Are you looking for a way to manage a lot of users or allow users to login to your system?</h4>
+					</figcaption>
+				</figure>
+				<figure class="portfolio-item col-md-4 col-sm-6" >
+					<img class="img-responsive" src="9-.jpg" alt="Creative" width="220px" />
+					<figcaption class="mask">
+						<h3 style=text-align:center>Custom Reporting Software</h3>
+						<br>
+						<h4 style=text-align:center>Do you have a lot of data, but no way to make decisions based on your data?</h4>
+					</figcaption>
+				</figure>
+				<figure class="portfolio-item col-md-4 col-sm-6" >
+					<img class="img-responsive" src="4.jpg" alt="Creative" width="230px" />
+					<figcaption class="mask">
+						<h3 style=text-align:center>Meet The Team</h3>
+						<br>
+						<h4 style=text-align:center>Our ever-growing team of software development specialists are not only incredibly talented at what they do, but they also work with your business to fully understand who you are, what you do, the technology you use and your processes.</h4>
+					</figcaption>
+				</figure>
+				<figure class="portfolio-item col-md-4 col-sm-6" >
+					<img class="img-responsive" src="5.jpg" alt="Website application development" width="300px" />
+					<figcaption class="mask">
+						<h3 style=text-align:center>Website Application Development</h3>
+						<br>
+						<h4 style=text-align:center>Its greatest advantage? It's accessible wherever you have a connection to your local intranet.</h4>
+					</figcaption>
+				</figure>
+				<figure class="portfolio-item col-md-4 col-sm-6" >
+					<img class="img-responsive" src="6.jpg" alt="Adena icons pack" width="300px" />
+					<figcaption class="mask">
+						<h3 style=text-align:center>Mobile App Development</h3>
+						<br>
+						<h4 style=text-align:center>Do you want to create a mobile app? Mobile apps are a great way of getting people to engage with your products and services.</h4>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+	</section>
+	<!-- Portfolio section end -->
+	<!-- Contact section start -->
+	<section id="contact">
+		<div class="container">
+			<header>
+				<h2>Get in Touch</h2>
+				<p>If you want to have a chat with us over a coffee to see how we can assist your business, then please contact us.
+				</p>
+			</header>
+			<!--Map Section-->
+			<div class="map-wrapper">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.411904563813!2d28.340452815275725!3d-25.822969054854273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e955dadbb47bacd%3A0x3d299aff0be5b416!2sVacation+Recreational+Services+Pty+Ltd!5e0!3m2!1sen!2sza!4v1561034880144!5m2!1sen!2sza" width="1100" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-8">
+					<form class="row" id="contact-form" method="post" action="contact.php" role="form">
+						<div class="form-group col-md-6">
+							<input name="name" type="text" placeholder="Your Name" class="form-control" />
+						</div>
+						<div class="form-group col-md-6">
+							<input name="mail" type="email" placeholder="Your Email" class="form-control" />
+						</div>
+						<div class="form-group col-md-12">
+							<div class="form-group">
+								<label for="form_need" style=color:darkgray>Please specify your need *
+								</label>
+								<select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+									<option value="">
+									</option>
+									<option value="Request quotation">Request quotation
+									</option>
+									<option value="Request project status">Request project status
+									</option>
+									<option value="Join the team">Join the team
+									</option>
+									<option value="Other">Other
+									</option>
+								</select>
+								<div class="help-block with-errors">
+								</div>
+							</div>
+						</div>
+						<div class="form-group col-md-12">
+							<textarea name="message" class="form-control" rows="10" placeholder="Message for ProVision"></textarea>
+						</div>
+						<div class="form-group col-md-12">
+							<button class="btn btn-lg btn btn-danger">Send</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-3 col-md-offset-1">
+					<address>
+						<span>Our Address</span>
+						<p>
+							Mooikloof Office Park East<br>
+							Cnr Atterbury and Jollify Main Road<br>
+							Mooikloof, Pretoria, 0059
+						</p>
+					</address>
+					<address>
+						<span>Email</span>
+						<p><a href="mailto:support@provision-sa.com" style=color:darkred><strong>info@provision-sa.com</strong></a>
+					</address>
+					<address>
+						<span>Phone</span>
+						<p>+27 (0)12 492 1108</p>
+					</address>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Contact section end -->
+	<!-- Footer start -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<p>Pro Vision Company pty ltd <i class="fa fa-love"></i><a href="https://www.provision-sa.com">Website</a>
+</p>
+				</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer end  -->
+
+	<!-- Load jQuery -->
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+
+	<!-- Load Booststrap -->
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="js/smooth-scroll.js"></script>
+
+
+	<!-- Load custom js for theme -->
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
